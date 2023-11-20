@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: black;
+        } */
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 4% 6%;
+            text-align: center;
+        }
+        img, #transfer{
+            margin: 0.5rem 0;
+        }
+        @font-face {
+    font-family: Big;
+    src: url('/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Mid;
+    src: url('/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Small;
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+        #transfer{
+            color: black;
+            font-family: Mid;
+            font-size: 1.0rem;
+        }
+        h2{
+            font-size: 2.5rem;
+            font-family: Mid;
+        }
+        #info{
+            color: springgreen;
+            font-size: 0.875rem;
+            font-family: small;
+        }
+        a{
+            background-color: springgreen;
+            color: white;
+            display: block;
+            font-size: 0.875rem;
+            font-family: Mid;
+            border-radius: 20px;
+            padding: 14px 16px;
+            margin: 2rem 0;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="done.svg" alt="done" width="50px">
+        <span id="transfer">전송 성공</span>
+        <h2>$<%= amountsent %></h2>
+        <span id="info">수취인 계좌는 은행의 통지에 따라 20분 이내에 입금될 것으로 예상됩니다.</span>
+        
+        <a href="/dashboard">홈으로</a>
+    
+    </header>
+</body>
+</html>

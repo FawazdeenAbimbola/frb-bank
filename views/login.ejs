@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Royal Bank Ltd.</title>
+    <link rel="shortcut icon" href="logo-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <header class="login-header animate-bottom" style="display:none;" id="myDiv">
+        <section class="form-container">
+            <img src="/logo-2.png" alt="logo" width="40px">
+
+            <h4 class="heading-p">Welcome Back!</h4>
+            <form action="/login" method="post">
+                <div class="fields">
+                    <label for="Number">Account Number</label>
+                    <input type="number" name="accountNumber" id="">
+                </div>
+                <div class="fields">
+                    <label for="Password">Password </label>
+                    <input type="password" name="password" id="">
+                </div>
+                <div class="fields">
+                    <button type="submit">Sign In</button>
+                </div>
+                
+        </form>
+    </section>
+    </header>
+    <script>
+
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+            </script>
+</body>
+</html>

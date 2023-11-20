@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Bank Inc: Your Seamless One-time Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo-2.png" type="image/x-icon">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <header class="site-header animate-bottom" style="display:none;" id="myDiv">
+        <nav class="site-nav">
+            <a href="/" class="logo"><img src="/logo-2.png" alt="logo" ></a>
+            <div class="nav-links">
+                <ul class="ulnav-links">
+                    <li><a href="/login" class="login">Log In</a></li>
+                    <li><a href="/signup" class="signup">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="icon-absolute">
+            <img src="/payicon.svg" alt="payicon" width="200px">
+        </div>
+        <div class="info-container">
+            <h1>First Royal is for everyone who loves their payment seamless.</h1>
+            <img src="/payment.svg" width="100px" alt="payment-icon">
+            <h2>For Everyone</h2>
+            <p>Find out why we have more than 10M active accounts worldwide.</p>
+            <a href="/login" class="learn-btn">Get Started</a>
+        </div>
+       
+    </header>
+    <footer class="site-footer">
+        <hr class="line">
+        <div class="footer-links">
+            <p> First Royal Bank Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution under the Payment Services Act 2017. © 1999–2023 All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<header class="site-header-mobile">
+   <nav class="site-nav">
+        <button><img src="/img/menu.svg" id="menu" alt="menu" width="30px"></button>
+        <div class="nav-links">
+            <ul>
+                <li>Home</li>
+            </ul>
+        </div>
+        <div class="profile-div">
+            <div class="profile-pic">
+                <a href="/korean.html"><img src="/img/hero.jpeg" alt="hero" width="50px" height="50px"></a>
+            </div>
+        </div>
+   </nav>
+   <div class="text-container">
+        <div class="profile">
+            <span class="welcome" style="display: block;font-family: firstFont;font-size: 1rem;line-height: 1.6;margin: 0 0 1rem;">Hi Lee,</span>
+            <span class="tot-bal">Total balance</span>
+            <span class="total-balance">$834,125.46</span>
+        </div>
+        <div class="actions-btn">
+            <button class="overview-btn">Overview</button>
+            <button class="acc-summary" onclick="alert('Account Summary has been sent to your mail, it is expected to be received in 15 minutes.!')">Account Summary</button>
+        </div>
+        <div class="card-details">
+            <img src="/img/creditcard.png" alt="credit-card" width="100%">
+        </div>
+        <div class="process-btns">
+            <span id="Quick-link">Quick links</span>
+            <div class="processes-btn">
+                <div class="send-btn pbtns">
+                    <a href="javascript:void(0)" id="send"><img src="/img/send.png" width="30px" alt=""></a>
+                    <span>Send Money</span>
+                </div>
+                <div class="manage-btn pbtns">
+                    <a href="javascript:void(0)" id="user"><img src="/img/user.png"  alt="" width="30px"></a>
+                    <span>User Profile</span>
+                </div>
+                <div class="logout-btn pbtns">
+                    <a href="/logout"><img src="/img/power-button.png" width="25px" alt=""></a>
+                    <span>Log Out </span>
+                </div>
+            </div>
+        </div>
+
+        <!------profile-->
+        <div class="profile-container">
+            <nav class="site-nav">
+                <button><img src="/img/back.svg" alt="menu" width="30px" id="closeButton"></button>
+           </nav>
+            <div class="name">
+                <span class="fname">Lee Seo Joon  <span class="email">leoseojoon@gmail.com</span></span>
+                <span><img src="/img/hero.jpeg" alt="" width="50px" class="pro-img" height="50px"></span>
+            </div>
+            <div class="personal-details">
+                <span class="personal-details-text">PERSONAL DETAILS</span>
+                <div class="info">
+                  <div class="first-name"><span>First Name: </span> <span style="font-weight: 600;">Joon</span></div> 
+                  <div class="last-name"><span>Last Name: </span><span style="font-weight: 600;">Lee</span></div>
+                  <div class="phone-number"><span>Phone Number: </span><span style="font-weight: 600;">xxxxxxxx789</span></div>
+                </div>
+            </div>
+            <div class="personal-details">
+                <span class="personal-details-text">FRBTAG</span>
+                <div class="info">
+                    
+                  <div class="first-name"><span>Tag Name: </span> <span style="font-weight: 600;">$LeeSeoJ124</span></div> 
+                  <div class="last-name"><span>Frbtags are specified usernames for the purpose for swift payments.</span></div> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="error-info">
+            <span>Unable to send; requires Hardware token</span>
+            <button id="error-cancel">Cancel</button>
+        </div>
+   </div>
+<script src="/script.js"></script>
+</header>    
+</body>
+</html>

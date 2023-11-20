@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Bank Inc: Your Seamless One-time Bank</title>
+    <link rel="shortcut icon" href="logo-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<header class="site-header-mobile">
+   <nav class="site-nav">
+        <button><img src="/img/menu.svg" id="menu" alt="menu" width="30px"></button>
+        <div class="nav-links">
+            <ul>
+                <li>집</li>
+            </ul>
+        </div>
+        <div class="profile-div">
+            <div class="profile-pic">
+                <a href="/dashboard"><img src="/img/hero.jpeg" alt="hero" width="50px" height="50px"></a>
+            </div>
+        </div>
+   </nav>
+   <div class="text-container">
+        <div class="profile">
+            <span class="welcome" style="display: block;font-family: firstFont;font-size: 1rem;line-height: 1.6;margin: 0 0 1rem;">안녕 리</span>
+            <span class="tot-bal">전체 균형</span>
+            <span class="total-balance">$834,125.46</span>
+        </div>
+        <div class="actions-btn">
+            <button class="overview-btn">개요</button>
+            <button class="acc-summary" onclick="alert('계정 요약이 귀하의 메일로 전송되었습니다. 15분 안에 수신될 것으로 예상됩니다!')">계정 요약</button>
+        </div>
+        <div class="card-details">
+            <img src="/img/creditcard.png" alt="credit-card" width="100%" height="20%">
+        </div>
+        <div class="process-btns">
+            <span id="Quick-link">빠른 링크</span>
+            <div class="processes-btn">
+                <div class="send-btn pbtns">
+                    <a href="javascript:void(0)"  class="send-btn"><img src="/img/send.png" width="30px" alt=""></a>
+                    <span>돈을 보내다</span>
+                </div>
+                <div class="manage-btn pbtns">
+                    <a href="javascript:void(0)" id="user"><img src="/img/user.png"  alt="" width="30px"></a>
+                    <span>유저 프로필</span>
+                </div>
+                <div class="logout-btn pbtns">
+                    <a href="/logout"><img src="/img/power-button.png" width="25px" alt=""></a>
+                    <span>로그 아웃 </span>
+                </div>
+            </div>
+        </div>
+
+        <!------profile-->
+        <div class="profile-container">
+            <nav class="site-nav">
+                <button><img src="/img/back.svg" alt="menu" width="30px" id="closeButton"></button>
+           </nav>
+            <div class="name">
+                <span class="fname">Lee Jongbaek  <span class="email">leejongbaek@gmail.com</span></span>
+                <span><img src="/img/hero.jpeg" alt="" width="50px" class="pro-img" height="50px"></span>
+            </div>
+            <div class="personal-details">
+                <span class="personal-details-text">개인정보</span>
+                <div class="info">
+                  <div class="first-name"><span>이름: </span> <span style="font-weight: 600;">Jongbaek</span></div> 
+                  <div class="last-name"><span>성: </span><span style="font-weight: 600;">Lee</span></div>
+                  <div class="phone-number"><span>계좌 번호: </span><span style="font-weight: 600;">xxxxxxxx789</span></div>
+                </div>
+            </div>
+            <div class="personal-details">
+                <span class="personal-details-text">FRBTAG</span>
+                <div class="info">
+                    
+                  <div class="first-name"><span>태그 이름: </span> <span style="font-weight: 600;">$Jongbaek124</span></div> 
+                  <div class="last-name"><span>Frbtags 는 신속한 결제를 위해 지정된 사용자 이름입니다.</span></div> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="error-info">
+            <span>Unable to send; requires Hardware token</span>
+            <button id="error-cancel">Cancel</button>
+        </div>
+   </div>
+   <section class="send-section" id="sendsection">
+    <div class="send-nav">
+        <button class="back" id="back-btn"><img src="left.svg" alt="left" width="20px" id="back-btn"></button>
+        <div class="title">
+            <h2>Send</h2>
+        </div>
+    </div>
+    <div class="send-balance">
+        <img src="dollar.svg" alt="dollar" width="50px">
+        <p>Current balance:<%= balance %></p>
+    </div>
+    <div class="form-container">
+
+        <form action="/send" method="post">
+            <div class="fields">
+                <input type="text" name="accno" id="" placeholder="은행계좌번호를 입력하세요" autocomplete="off" required>
+            </div>
+
+            <div class="fields">
+                <input type="text" name="bankswift" id="" placeholder="은행 스위프트 코드를 입력하세요"  autocomplete="off" required>
+            </div>
+            <div class="fields">
+                <input type="text" name="amount" placeholder="양" id=""   autocomplete="off" required>
+            </div>
+            <div class="fields">
+                <input type="text" name="remark" placeholder="화법" id=""   autocomplete="off" required>
+            </div>
+            <button type="submit" class="send">돈을 보내다</button>
+        </form>
+    </div>
+    
+</section>
+<script src="/script.js"></script>
+</header>    
+</body>
+</html>
